@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
     "@next/font": "^14.2.2",
     "@payloadcms/bundler-webpack": "^1.0.6",
     "@payloadcms/db-mongodb": "^1.5.0",
     "@payloadcms/richtext-slate": "^1.5.0",
     "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "@swc/core": "^1.2.147",
@@ -29,10 +31,13 @@
     "prettier": "^2.2.0",
     "react": "^18.2.0",
     "react-dom": "^18",
+    "react-hook-form": "^7.51.3",
+    "sonner": "^1.4.41",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
     "webpack": "^5.91.0",
-    "webpack-sources": "^3.2.3"
+    "webpack-sources": "^3.2.3",
+    "zod": "^3.23.4"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.5",
