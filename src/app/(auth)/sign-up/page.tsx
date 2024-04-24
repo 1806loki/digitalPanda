@@ -8,18 +8,20 @@ import {
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { cn } from '@/lib/utils'
+import { AuthCredentialsValidator, TAuthCredentialValidator } from '@/lib/validators/account-credentials-validator'
+import { trpc } from '@/trpc/client'
+import { zodResolver } from "@hookform/resolvers/zod"
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-
-import { AuthCredentialsValidator, TAuthCredentialValidator } from '@/lib/validators/account-credentials-validator'
 
 const Page = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm<TAuthCredentialValidator>({
         resolver: zodResolver(AuthCredentialsValidator)
     })
+
+
 
 
     const onSubmit = ({ email, password }: TAuthCredentialValidator) => {
